@@ -1,3 +1,5 @@
+//Stock Market Portfolio App By Akash Mishra.
+
 const express = require('express');
 const app = express();
 const exphbs  = require('express-handlebars');
@@ -15,7 +17,7 @@ const otherstuff="Hello there,this is raze stuff";
 //set handlebar routes
 app.get('/', function (req, res) {
     res.render('home',{
-        stuff:otherstuff,
+        stuff:otherstuff
     });
 });
 
