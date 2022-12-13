@@ -1,2 +1,18 @@
-<h1>This is my handlebars page...</h1>
-<p>{{stuff}}</p>
+ {{!-- {{posted_stuff}} <br>    check if input form gets the msg from user to backend  --}}
+
+<div class="jumbotron">
+    <h1 class="display-4">{{ stock.companyName }} ({{ stock.symbol }})</h1>
+
+<strong>Latest Price: </strong>{{ stock.latestPrice }}<br/>
+<strong>Previous Close: </strong>{{ stock.previousClose }}<br/>
+<strong>MarketCap: </strong>{{ stock.marketCap }}<br/>
+<strong>ChangePercent: </strong>{{ stock.changePercent  }}<br/>
+<strong>AvgTotalVolume: </strong>{{ stock.avgTotalVolume }}<br/>
+<strong>week52High: </strong>{{ stock.week52High }}<br/>
+<strong>week52Low: </strong>{{stock.week52Low}}<br/>
+</div>
+
+{{!-- <br/><br/>
+{{#each stock}}
+    {{@key}} | {{this}}<br/>
+{{/each}} --}}
